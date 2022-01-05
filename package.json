@@ -2,12 +2,16 @@
   "name": "EmptyBot01",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev node index.js"
+    "dev": "cross-env NODE_ENV=dev node index.js",
+    "start": "node index.js",
+    "build:customaction": "cd customaction && npm run build",
+    "build:schema": "cd schemas && sh ./update-schema.sh"
   },
   "dependencies": {
     "cross-env": "latest",
-    "botbuilder-ai-luis": "4.14.1-preview",
-    "botbuilder-ai-qna": "4.14.1-preview",
-    "botbuilder-dialogs-adaptive-runtime-integration-express": "4.14.1-preview"
+    "botbuilder-ai-luis": "4.13.4-preview",
+    "botbuilder-ai-qna": "4.13.4-preview",
+    "botbuilder-dialogs-adaptive-runtime-integration-express": "4.13.4-preview",
+    "custom-actions": "file:customaction"
   }
 }
