@@ -26,8 +26,9 @@ export interface MultiplyDialogConfiguration extends DialogConfiguration {
 
 export class MultiplyDialog
   extends Dialog
-  implements MultiplyDialogConfiguration {
-  public static $kind = "BotbuilderSamples.MultiplyDialog";
+  implements MultiplyDialogConfiguration
+{
+  public static $kind = "MultiplyDialog";
 
   public arg1: NumberExpression = new NumberExpression(0);
   public arg2: NumberExpression = new NumberExpression(0);
@@ -56,6 +57,9 @@ export class MultiplyDialog
     if (this.resultProperty) {
       dc.state.setValue(this.resultProperty.getValue(dc.state), result);
     }
+    console.log(arg1);
+    console.log(arg2);
+    console.log(result);
 
     return dc.endDialog(result);
   }

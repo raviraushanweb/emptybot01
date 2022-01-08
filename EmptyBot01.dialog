@@ -37,6 +37,22 @@
                     "name": "Send a response"
                   },
                   "activity": "${SendActivity_Greeting()}"
+                },
+                {
+                  "$kind": "MultiplyDialog",
+                  "$designer": {
+                    "id": "LJEhTF"
+                  },
+                  "arg1": 10,
+                  "arg2": 12,
+                  "resultProperty": "dialog.post"
+                },
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "gSphWy"
+                  },
+                  "activity": "${SendActivity_gSphWy()}"
                 }
               ]
             }
