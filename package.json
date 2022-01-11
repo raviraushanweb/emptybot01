@@ -8,10 +8,10 @@
     "build:schema": "cd schemas && sh ./update-schema.sh"
   },
   "dependencies": {
-    "cross-env": "latest",
     "botbuilder-ai-luis": "4.13.4-preview",
     "botbuilder-ai-qna": "4.13.4-preview",
     "botbuilder-dialogs-adaptive-runtime-integration-express": "4.13.4-preview",
+    "cross-env": "latest",
     "custom-actions": "file:customaction"
   }
 }
